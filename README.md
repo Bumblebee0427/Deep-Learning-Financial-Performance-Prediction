@@ -15,6 +15,7 @@ Predict nine Q0 financial indicators from company metadata and Q1–Q10 historic
 - `arcsinh_ablation_cv.py`, `hard_representations_cv.py`, and their output folders: common-fold target-transform and hard-target representation experiments.
 - `lightgbm_small_search.py`, `candidate_recipe_cv.py`, and their output folders: limited development search and seed-314159 recipe check.
 - `final_submission.py`: fit the frozen candidate recipe on all 100,000 training rows and write `final_submission.csv` plus distribution diagnostics. It does not run CV or tune on test data.
+- `submission_code.py`, `submission_code_for_pdf.txt`, and `SUBMISSION_CODE_README.md`: standalone grader-facing final pipeline, printable code copy, and verification notes.
 
 Install [Git LFS](https://git-lfs.com/) before cloning to retrieve the CSV files. From the repository root, run:
 
