@@ -1,0 +1,272 @@
+{
+  "train_rows": 100000,
+  "test_rows": 50000,
+  "output_columns": [
+    "Id",
+    "Q0_TOTAL_ASSETS",
+    "Q0_TOTAL_LIABILITIES",
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY",
+    "Q0_GROSS_PROFIT",
+    "Q0_COST_OF_REVENUES",
+    "Q0_REVENUES",
+    "Q0_OPERATING_INCOME",
+    "Q0_OPERATING_EXPENSES",
+    "Q0_EBITDA"
+  ],
+  "frozen_accounting_recipe_sha256": "c7546ae4a87d6b561156cd0d050085e3485a12865db604ac1e0a2385640d8a34",
+  "fixed_methods": {
+    "Q0_TOTAL_ASSETS": "search_large_leaf",
+    "Q0_TOTAL_LIABILITIES": "search_large_leaf",
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY": "search_large_leaf",
+    "Q0_GROSS_PROFIT": "search_l1",
+    "Q0_COST_OF_REVENUES": "search_l1",
+    "Q0_OPERATING_INCOME": "sign_magnitude",
+    "Q0_OPERATING_EXPENSES": "search_large_leaf",
+    "Q0_EBITDA": "sign_magnitude"
+  },
+  "targets": {
+    "Q0_TOTAL_ASSETS": {
+      "prediction": {
+        "min": -215699991559.75745,
+        "p01": -3940282589.368518,
+        "median": 826783898.6735706,
+        "mean": 5185280961.805448,
+        "p99": 116772163578.33691,
+        "max": 338720309025.52014,
+        "number_negative": 781
+      },
+      "training_target": {
+        "min": -218228039147.0449,
+        "p01": -4074291231.9238563,
+        "median": 823114176.7190287,
+        "mean": 5284814444.947818,
+        "p99": 115689651718.14603,
+        "max": 385222182619.456,
+        "number_negative": 1631
+      },
+      "comparison": {
+        "median_difference": 3669721.9545419216,
+        "mean_difference": -99533483.14237022,
+        "p01_difference": 134008642.55533838,
+        "p99_difference": 1082511860.1908875,
+        "negative_rate_difference_percentage_points": -0.06900000000000014
+      }
+    },
+    "Q0_TOTAL_LIABILITIES": {
+      "prediction": {
+        "min": -49942707740.67594,
+        "p01": -1424867986.6892862,
+        "median": 300083619.34626985,
+        "mean": 2320741740.371225,
+        "p99": 42466108155.9306,
+        "max": 151669330429.36813,
+        "number_negative": 786
+      },
+      "training_target": {
+        "min": -52911235273.14236,
+        "p01": -1461501847.593674,
+        "median": 298292234.7479054,
+        "mean": 2352212315.990682,
+        "p99": 42550967532.774895,
+        "max": 171434826254.69907,
+        "number_negative": 1630
+      },
+      "comparison": {
+        "median_difference": 1791384.5983644724,
+        "mean_difference": -31470575.619457245,
+        "p01_difference": 36633860.90438771,
+        "p99_difference": -84859376.84429169,
+        "negative_rate_difference_percentage_points": -0.05799999999999972
+      }
+    },
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY": {
+      "prediction": {
+        "min": -168396005710.29224,
+        "p01": -2580239188.274957,
+        "median": 521357648.06402946,
+        "mean": 2865145102.535156,
+        "p99": 76084367414.37425,
+        "max": 210471094423.15308,
+        "number_negative": 1126
+      },
+      "training_target": {
+        "min": -170079580681.338,
+        "p01": -2655876567.5676155,
+        "median": 517793867.34404147,
+        "mean": 2932602128.957135,
+        "p99": 75632412235.70267,
+        "max": 232934241636.54993,
+        "number_negative": 2518
+      },
+      "comparison": {
+        "median_difference": 3563780.7199879885,
+        "mean_difference": -67457026.42197943,
+        "p01_difference": 75637379.29265833,
+        "p99_difference": 451955178.6715851,
+        "negative_rate_difference_percentage_points": -0.26600000000000024
+      }
+    },
+    "Q0_GROSS_PROFIT": {
+      "prediction": {
+        "min": -391517459.88903713,
+        "p01": -4958068.436067425,
+        "median": 37394757.30444014,
+        "mean": 260011346.2902007,
+        "p99": 3677574393.293947,
+        "max": 10939079847.05994,
+        "number_negative": 1312
+      },
+      "training_target": {
+        "min": -1908190344.1017056,
+        "p01": -7639307.338780136,
+        "median": 36202766.631297834,
+        "mean": 269263332.74503464,
+        "p99": 4118160233.306642,
+        "max": 15217976948.860758,
+        "number_negative": 3087
+      },
+      "comparison": {
+        "median_difference": 1191990.6731423065,
+        "mean_difference": -9251986.454833925,
+        "p01_difference": 2681238.902712711,
+        "p99_difference": -440585840.01269484,
+        "negative_rate_difference_percentage_points": -0.4630000000000002
+      }
+    },
+    "Q0_COST_OF_REVENUES": {
+      "prediction": {
+        "min": -52848149.82577605,
+        "p01": 248419.40298631653,
+        "median": 38388849.00781378,
+        "mean": 449773787.48989373,
+        "p99": 6515401069.258519,
+        "max": 21796806056.41604,
+        "number_negative": 284
+      },
+      "training_target": {
+        "min": -2115329946.7986057,
+        "p01": 162156.5891822635,
+        "median": 38001009.47662978,
+        "mean": 463512879.2799254,
+        "p99": 6931959187.783432,
+        "max": 30856872866.608932,
+        "number_negative": 696
+      },
+      "comparison": {
+        "median_difference": 387839.53118400276,
+        "mean_difference": -13739091.790031672,
+        "p01_difference": 86262.81380405303,
+        "p99_difference": -416558118.52491283,
+        "negative_rate_difference_percentage_points": -0.128
+      }
+    },
+    "Q0_REVENUES": {
+      "prediction": {
+        "min": 0.0,
+        "p01": 1253690.1542959798,
+        "median": 84255036.28522077,
+        "mean": 709785537.5157744,
+        "p99": 10519452459.421694,
+        "max": 28929726725.05406,
+        "number_negative": 0
+      },
+      "training_target": {
+        "min": 34219.635395363446,
+        "p01": 1078959.3642536905,
+        "median": 83324932.08040689,
+        "mean": 732786983.0507163,
+        "p99": 11057944657.411465,
+        "max": 34393659564.15798,
+        "number_negative": 0
+      },
+      "comparison": {
+        "median_difference": 930104.2048138827,
+        "mean_difference": -23001445.53494191,
+        "p01_difference": 174730.7900422893,
+        "p99_difference": -538492197.9897709,
+        "negative_rate_difference_percentage_points": 0.0
+      }
+    },
+    "Q0_OPERATING_INCOME": {
+      "prediction": {
+        "min": -11849093385.576832,
+        "p01": -1489010092.4702535,
+        "median": -13873555.360942481,
+        "mean": -61733899.38836677,
+        "p99": 445600945.3379946,
+        "max": 2023134783.363845,
+        "number_negative": 39758
+      },
+      "training_target": {
+        "min": -16603043069.470898,
+        "p01": -1658566612.0628126,
+        "median": -13362900.317615382,
+        "mean": -61384548.731722794,
+        "p99": 596475634.0876151,
+        "max": 5088807244.694802,
+        "number_negative": 79542
+      },
+      "comparison": {
+        "median_difference": -510655.0433270987,
+        "mean_difference": -349350.65664397925,
+        "p01_difference": 169556519.5925591,
+        "p99_difference": -150874688.74962056,
+        "negative_rate_difference_percentage_points": -0.026000000000003798
+      }
+    },
+    "Q0_OPERATING_EXPENSES": {
+      "prediction": {
+        "min": 0.0,
+        "p01": 1352192.4126223065,
+        "median": 69388831.73600191,
+        "mean": 320206761.1618985,
+        "p99": 4656027657.172967,
+        "max": 17142533127.532928,
+        "number_negative": 0
+      },
+      "training_target": {
+        "min": 440481.96626786777,
+        "p01": 1070140.4045775486,
+        "median": 69434137.97635816,
+        "mean": 330647881.4767574,
+        "p99": 5068890920.307457,
+        "max": 20859578383.486195,
+        "number_negative": 0
+      },
+      "comparison": {
+        "median_difference": -45306.2403562516,
+        "mean_difference": -10441120.314858913,
+        "p01_difference": 282052.0080447579,
+        "p99_difference": -412863263.13449,
+        "negative_rate_difference_percentage_points": 0.0
+      }
+    },
+    "Q0_EBITDA": {
+      "prediction": {
+        "min": -17239073201.177734,
+        "p01": -2051687894.005757,
+        "median": -14390515.009172607,
+        "mean": -64378647.16968844,
+        "p99": 677822264.7034981,
+        "max": 7014952234.509645,
+        "number_negative": 38946
+      },
+      "training_target": {
+        "min": -25504421742.41173,
+        "p01": -2304384992.719082,
+        "median": -12267757.551688211,
+        "mean": -65470294.10915723,
+        "p99": 854384436.5153767,
+        "max": 11069418997.2932,
+        "number_negative": 78018
+      },
+      "comparison": {
+        "median_difference": -2122757.457484396,
+        "mean_difference": 1091646.9394687861,
+        "p01_difference": 252697098.7133248,
+        "p99_difference": -176562171.81187856,
+        "negative_rate_difference_percentage_points": -0.1260000000000039
+      }
+    }
+  }
+}
