@@ -1,0 +1,4 @@
+target,method,smape_percent,sign_accuracy_percent
+Q0_OPERATING_INCOME,direct_arcsinh,51.77843071296076,92.62
+Q0_OPERATING_INCOME,margin,51.04290221333121,91.92
+Q0_OPERATING_INCOME,sign_magnitude,43.79011299309385,92.967

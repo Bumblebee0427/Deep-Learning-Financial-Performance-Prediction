@@ -1,0 +1,16 @@
+{
+  "seed": 314159,
+  "locked_mean_smape_percent": 21.206429681332068,
+  "candidate_mean_smape_percent": 16.571940932645603,
+  "improvement_pp": 4.634488748686465,
+  "substitutions": {
+    "Q0_TOTAL_ASSETS": "search_large_leaf",
+    "Q0_TOTAL_LIABILITIES": "search_large_leaf",
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY": "search_large_leaf",
+    "Q0_GROSS_PROFIT": "search_l1",
+    "Q0_COST_OF_REVENUES": "search_l1",
+    "Q0_OPERATING_INCOME": "sign_magnitude",
+    "Q0_OPERATING_EXPENSES": "search_large_leaf",
+    "Q0_EBITDA": "sign_magnitude"
+  }
+}

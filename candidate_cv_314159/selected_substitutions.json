@@ -1,0 +1,16 @@
+{
+  "development_seed": 2026,
+  "held_seed": 314159,
+  "accounting_recipe": "original frozen seed42 weights",
+  "selection_rule": "full mean gain >=0.05 pp and >=3/5 fold wins, one pass in rubric target order",
+  "substitutions": {
+    "Q0_TOTAL_ASSETS": "search_large_leaf",
+    "Q0_TOTAL_LIABILITIES": "search_large_leaf",
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY": "search_large_leaf",
+    "Q0_GROSS_PROFIT": "search_l1",
+    "Q0_COST_OF_REVENUES": "search_l1",
+    "Q0_OPERATING_INCOME": "sign_magnitude",
+    "Q0_OPERATING_EXPENSES": "search_large_leaf",
+    "Q0_EBITDA": "sign_magnitude"
+  }
+}

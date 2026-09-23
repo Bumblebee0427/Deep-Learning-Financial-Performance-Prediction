@@ -2,3 +2,11 @@ __pycache__/
 *.py[cod]
 .DS_Store
 /oof_outputs/fold_cache/
+/locked_cv_2026/fold_cache/
+/ablation_cv_2026/fold_cache/
+/representation_cv_2026/fold_cache/
+/search_cv_2026/fold_cache/
+/locked_cv_314159/fold_cache/
+/representation_cv_314159/fold_cache/
+/candidate_cv_314159/fold_cache/
+*_stderr.log

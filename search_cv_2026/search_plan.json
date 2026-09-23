@@ -1,0 +1,54 @@
+{
+  "development_seed": 2026,
+  "reserved_validation_seed": 314159,
+  "eligibility": "arcsinh beats raw by >=0.15 pp and on >=3/5 folds",
+  "selection": "best config only if >=0.15 pp and >=3/5 fold wins versus baseline",
+  "configs": {
+    "baseline": {
+      "num_leaves": 31,
+      "min_child_samples": 40,
+      "learning_rate": 0.08,
+      "n_estimators": 120,
+      "objective": "regression"
+    },
+    "small_leaf": {
+      "num_leaves": 15,
+      "min_child_samples": 80,
+      "learning_rate": 0.08,
+      "n_estimators": 120,
+      "objective": "regression"
+    },
+    "large_leaf": {
+      "num_leaves": 63,
+      "min_child_samples": 20,
+      "learning_rate": 0.08,
+      "n_estimators": 120,
+      "objective": "regression"
+    },
+    "slow": {
+      "num_leaves": 31,
+      "min_child_samples": 40,
+      "learning_rate": 0.05,
+      "n_estimators": 180,
+      "objective": "regression"
+    },
+    "l1": {
+      "num_leaves": 31,
+      "min_child_samples": 40,
+      "learning_rate": 0.08,
+      "n_estimators": 120,
+      "objective": "regression_l1"
+    }
+  },
+  "eligible_targets": [
+    "Q0_TOTAL_ASSETS",
+    "Q0_TOTAL_LIABILITIES",
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY",
+    "Q0_GROSS_PROFIT",
+    "Q0_COST_OF_REVENUES",
+    "Q0_REVENUES",
+    "Q0_OPERATING_INCOME",
+    "Q0_OPERATING_EXPENSES",
+    "Q0_EBITDA"
+  ]
+}

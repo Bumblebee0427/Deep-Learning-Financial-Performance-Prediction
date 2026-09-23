@@ -1,0 +1,13 @@
+{
+  "seed": 2026,
+  "feature_set": "202 base predictors only",
+  "raw_mean_smape_percent": 29.141974287193268,
+  "arcsinh_mean_smape_percent": 19.100484235118294,
+  "new_fold_seconds": [
+    38.14880612492561,
+    36.18936900002882,
+    36.08917612535879,
+    40.83993679191917,
+    42.15375337516889
+  ]
+}
