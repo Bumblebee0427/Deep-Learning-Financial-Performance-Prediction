@@ -1,0 +1,3 @@
+predictor,target,pearson_correlation,exact_match_count
+totalRevenue,Q0_REVENUES,0.9655241313475323,0
+ebitda,Q0_EBITDA,-0.18767179906945716,0
