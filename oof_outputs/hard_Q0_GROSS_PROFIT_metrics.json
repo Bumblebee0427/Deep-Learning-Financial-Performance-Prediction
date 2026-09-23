@@ -1,0 +1,47 @@
+{
+  "target": "Q0_GROSS_PROFIT",
+  "config": {
+    "n_estimators": 120,
+    "learning_rate": 0.08,
+    "num_leaves": 31,
+    "min_child_samples": 40,
+    "colsample_bytree": 0.8,
+    "threads": 4,
+    "n_splits": 5,
+    "random_state": 42,
+    "lag_feature_version": 1,
+    "preprocessing": "fit-fold median imputation + one-hot categories"
+  },
+  "engineered_features": [
+    "q0_gross_profit_lag_q1",
+    "q0_gross_profit_q1_minus_q2",
+    "q0_gross_profit_q1_sign",
+    "q0_gross_profit_q2_sign",
+    "q0_gross_profit_q1_q2_same_sign",
+    "q0_gross_profit_q1_q4_mean",
+    "q0_gross_profit_q1_q4_median",
+    "q0_gross_profit_q1_q4_std",
+    "q0_gross_profit_q1_q4_slope_recent",
+    "q0_gross_profit_q1_q10_mean",
+    "q0_gross_profit_q1_q10_slope_recent"
+  ],
+  "fold_seconds": [
+    6.360657792072743,
+    5.882374749984592,
+    5.754045583307743,
+    5.851327250245959,
+    5.71603999985382
+  ],
+  "raw_lag": {
+    "smape_percent": 35.884145564765404,
+    "sign_accuracy_percent": 97.373,
+    "prediction_min": -486971078.6566237,
+    "prediction_max": 12642459561.44444
+  },
+  "arcsinh_lag": {
+    "smape_percent": 23.144757854467265,
+    "sign_accuracy_percent": 98.592,
+    "prediction_min": -456408917.8265203,
+    "prediction_max": 12154226394.190214
+  }
+}

@@ -10,12 +10,16 @@ Predict nine Q0 financial indicators from company metadata and Q1–Q10 historic
 - `evaluation_framework.py`: reproducible data audit, train/validation split, rubric sMAPE, and naive mean baseline.
 - `AUDIT_README.md` and `audit_outputs/`: audit findings and baseline results.
 - `benchmark_models.py` and `benchmark_outputs/`: seven-model validation benchmark and aligned out-of-sample predictions.
+- `oof_models.py`, `hard_target_oof.py`, `analyze_oof.py`, and `oof_outputs/REPORT.md`: five-fold OOF models, lag baselines, accounting identities, and target-specific recipes.
 
 Install [Git LFS](https://git-lfs.com/) before cloning to retrieve the CSV files. From the repository root, run:
 
 ```bash
 python evaluation_framework.py
 python benchmark_models.py --all
+python oof_models.py --all
+python hard_target_oof.py --all
+python analyze_oof.py --all
 ```
 
 The evaluation framework reads the test file only for schema and missing-value checks. It does not fit or tune a model on test data.

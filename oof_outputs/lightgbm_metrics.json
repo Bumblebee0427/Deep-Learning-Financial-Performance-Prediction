@@ -1,0 +1,39 @@
+{
+  "model": "lightgbm",
+  "n_rows": 100000,
+  "n_splits": 5,
+  "random_state": 42,
+  "config": {
+    "folds": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "preprocess_version": 1,
+    "preprocessing": "train-fold median imputation + one-hot categories",
+    "n_estimators": 120,
+    "learning_rate": 0.08,
+    "num_leaves": 31,
+    "min_child_samples": 40,
+    "colsample_bytree": 0.8,
+    "n_jobs": 4
+  },
+  "fold_seconds": [
+    18.531470791902393,
+    18.025490208063275,
+    16.912165665999055,
+    16.55229058302939,
+    18.94467075029388
+  ],
+  "total_fold_seconds": 88.96608799928799,
+  "mean_smape_percent": 29.300993131737805,
+  "target_smape_percent": {
+    "Q0_TOTAL_ASSETS": 14.986739460163909,
+    "Q0_TOTAL_LIABILITIES": 16.698350415454616,
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY": 21.452983326390946,
+    "Q0_GROSS_PROFIT": 35.74157750029652,
+    "Q0_COST_OF_REVENUES": 22.89824324621582,
+    "Q0_REVENUES": 19.744757839862064,
+    "Q0_OPERATING_INCOME": 59.49138342338382,
+    "Q0_OPERATING_EXPENSES": 12.493592507048819,
+    "Q0_EBITDA": 60.20131046682374
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "target": "Q0_OPERATING_INCOME",
+  "config": {
+    "n_estimators": 120,
+    "learning_rate": 0.08,
+    "num_leaves": 31,
+    "min_child_samples": 40,
+    "colsample_bytree": 0.8,
+    "threads": 4,
+    "n_splits": 5,
+    "random_state": 42,
+    "lag_feature_version": 1,
+    "preprocessing": "fit-fold median imputation + one-hot categories"
+  },
+  "engineered_features": [
+    "q0_operating_income_lag_q1",
+    "q0_operating_income_q1_minus_q2",
+    "q0_operating_income_q1_sign",
+    "q0_operating_income_q2_sign",
+    "q0_operating_income_q1_q2_same_sign",
+    "q0_operating_income_q1_q4_mean",
+    "q0_operating_income_q1_q4_median",
+    "q0_operating_income_q1_q4_std",
+    "q0_operating_income_q1_q4_slope_recent",
+    "q0_operating_income_q1_q10_mean",
+    "q0_operating_income_q1_q10_slope_recent"
+  ],
+  "fold_seconds": [
+    6.663703209254891,
+    5.553961915895343,
+    5.144191917032003,
+    5.922084582969546,
+    6.503324083052576
+  ],
+  "raw_lag": {
+    "smape_percent": 59.0032550737048,
+    "sign_accuracy_percent": 91.66499999999999,
+    "prediction_min": -12798714034.012857,
+    "prediction_max": 2959924611.653168
+  },
+  "arcsinh_lag": {
+    "smape_percent": 51.84160717687122,
+    "sign_accuracy_percent": 92.662,
+    "prediction_min": -13091448593.137196,
+    "prediction_max": 3037856721.188944
+  }
+}

@@ -1,0 +1,4 @@
+identity,target,identity_smape_percent,median_absolute_residual,p95_absolute_residual,max_absolute_residual
+assets = liabilities + equity,Q0_TOTAL_ASSETS,3.3385861499903246e-15,0.0,4.76837158203125e-07,6.103515625e-05
+revenues = gross_profit + cost_of_revenues,Q0_REVENUES,0.7972214407324922,451491.2571657747,26629731.749342784,847246238.1023331
+operating_income = gross_profit - operating_expenses,Q0_OPERATING_INCOME,3.3773198469961053e-14,0.0,2.9802322387695312e-08,3.814697265625e-06

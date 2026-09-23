@@ -1,0 +1,10 @@
+target,best_rf_weight,best_rf_lgb_smape_percent,best_direct_method,best_direct_smape_percent,best_direct_parameters
+Q0_TOTAL_ASSETS,1.0,4.334836068512795,rf_lgb_rf_weight_1.00,4.334836068512795,"{""lgb_weight"": 0.0, ""rf_weight"": 1.0}"
+Q0_TOTAL_LIABILITIES,1.0,9.903894567268598,lag_q1_w0.25_plus_rf_lgb,9.822598267621562,"{""lag_method"": ""q1"", ""lag_weight"": 0.25, ""rf_weight_in_other_part"": 1.0}"
+Q0_TOTAL_STOCKHOLDERS_EQUITY,1.0,10.438126002825102,rf_lgb_rf_weight_1.00,10.438126002825102,"{""lgb_weight"": 0.0, ""rf_weight"": 1.0}"
+Q0_GROSS_PROFIT,0.25,35.26739428622085,lightgbm_arcsinh_lag,23.144757854467265,{}
+Q0_COST_OF_REVENUES,0.0,22.89824324621582,lag_q1,18.05066334952094,"{""lag_method"": ""q1"", ""lag_weight"": 1.0}"
+Q0_REVENUES,0.0,19.744757839862064,lag_q1_w0.75_plus_rf_lgb,17.669817052560465,"{""lag_method"": ""q1"", ""lag_weight"": 0.75, ""rf_weight_in_other_part"": 0.0}"
+Q0_OPERATING_INCOME,0.25,58.95118298969073,lightgbm_arcsinh_lag,51.84160717687122,{}
+Q0_OPERATING_EXPENSES,0.0,12.493592507048819,rf_lgb_rf_weight_0.00,12.493592507048819,"{""lgb_weight"": 1.0, ""rf_weight"": 0.0}"
+Q0_EBITDA,0.25,59.93536549625878,lightgbm_arcsinh_lag,50.35651413686492,{}

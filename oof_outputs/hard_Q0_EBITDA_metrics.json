@@ -1,0 +1,47 @@
+{
+  "target": "Q0_EBITDA",
+  "config": {
+    "n_estimators": 120,
+    "learning_rate": 0.08,
+    "num_leaves": 31,
+    "min_child_samples": 40,
+    "colsample_bytree": 0.8,
+    "threads": 4,
+    "n_splits": 5,
+    "random_state": 42,
+    "lag_feature_version": 1,
+    "preprocessing": "fit-fold median imputation + one-hot categories"
+  },
+  "engineered_features": [
+    "q0_ebitda_lag_q1",
+    "q0_ebitda_q1_minus_q2",
+    "q0_ebitda_q1_sign",
+    "q0_ebitda_q2_sign",
+    "q0_ebitda_q1_q2_same_sign",
+    "q0_ebitda_q1_q4_mean",
+    "q0_ebitda_q1_q4_median",
+    "q0_ebitda_q1_q4_std",
+    "q0_ebitda_q1_q4_slope_recent",
+    "q0_ebitda_q1_q10_mean",
+    "q0_ebitda_q1_q10_slope_recent"
+  ],
+  "fold_seconds": [
+    6.426247250288725,
+    5.2459809998981655,
+    5.167217916343361,
+    5.435611500404775,
+    5.33222183259204
+  ],
+  "raw_lag": {
+    "smape_percent": 59.20760752805529,
+    "sign_accuracy_percent": 91.757,
+    "prediction_min": -20646734368.906982,
+    "prediction_max": 8922549377.136662
+  },
+  "arcsinh_lag": {
+    "smape_percent": 50.35651413686492,
+    "sign_accuracy_percent": 92.833,
+    "prediction_min": -25359942921.53848,
+    "prediction_max": 8459752497.460909
+  }
+}
