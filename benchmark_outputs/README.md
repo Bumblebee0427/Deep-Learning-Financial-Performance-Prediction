@@ -44,3 +44,4 @@
 [`validation_truth.csv`](validation_truth.csv) 与 [`validation_predictions/`](validation_predictions/) 中各模型 CSV 都包含同顺序的 20,000 个 `row_index`、`Id` 和 9 个目标列。`row_index` 是原始 `train.csv` 行号，适合后续集成时严格对齐。逐行读取这些文件并重新调用原有 sMAPE 函数后，所有七个模型均复现其记录分数。
 
 这些分数来自一次固定的随机划分，仍可能受到合成数据中未知公司关联的影响；后续可增加交叉验证或分组验证。此阶段没有生成最终提交文件。
+本轮按 rubric 使用除 `Id` 外的全部候选特征，包括 `totalRevenue`、`ebitda` 等 Q0 同季度元数据。它们在题目数据中可用，但若实际预测时点尚未获得这些字段，验证分数会高估部署表现；这一可用性问题需要在确定最终模型前核实。
