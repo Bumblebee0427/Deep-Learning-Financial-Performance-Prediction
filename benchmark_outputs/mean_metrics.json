@@ -1,0 +1,96 @@
+{
+  "model": "mean",
+  "training_seconds": 0.0019768327474594116,
+  "prediction_seconds": 0.0,
+  "mean_smape_percent": 136.15185125696277,
+  "target_smape_percent": {
+    "Q0_TOTAL_ASSETS": 137.67627754724114,
+    "Q0_TOTAL_LIABILITIES": 141.1114450724846,
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY": 135.53909683911388,
+    "Q0_GROSS_PROFIT": 138.23393012209064,
+    "Q0_COST_OF_REVENUES": 144.39801159407696,
+    "Q0_REVENUES": 140.80915720762536,
+    "Q0_OPERATING_INCOME": 128.2922823293247,
+    "Q0_OPERATING_EXPENSES": 127.71038836494711,
+    "Q0_EBITDA": 131.59607223576054
+  },
+  "validation_rows": 20000,
+  "random_state": 42,
+  "config": {
+    "estimator": "train-fold target mean"
+  },
+  "range_diagnostics": {
+    "Q0_TOTAL_ASSETS": {
+      "prediction_min": 5401713730.641936,
+      "prediction_max": 5401713730.641936,
+      "prediction_median": 5401713730.641936,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 0
+    },
+    "Q0_TOTAL_LIABILITIES": {
+      "prediction_min": 2390484198.3020844,
+      "prediction_max": 2390484198.3020844,
+      "prediction_median": 2390484198.3020844,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 0
+    },
+    "Q0_TOTAL_STOCKHOLDERS_EQUITY": {
+      "prediction_min": 3011229532.3398514,
+      "prediction_max": 3011229532.3398514,
+      "prediction_median": 3011229532.3398514,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 0
+    },
+    "Q0_GROSS_PROFIT": {
+      "prediction_min": 272278610.35885537,
+      "prediction_max": 272278610.35885537,
+      "prediction_median": 272278610.35885537,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 0
+    },
+    "Q0_COST_OF_REVENUES": {
+      "prediction_min": 467282398.2582713,
+      "prediction_max": 467282398.2582713,
+      "prediction_median": 467282398.2582713,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 0
+    },
+    "Q0_REVENUES": {
+      "prediction_min": 739569738.7485332,
+      "prediction_max": 739569738.7485332,
+      "prediction_median": 739569738.7485332,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 0
+    },
+    "Q0_OPERATING_INCOME": {
+      "prediction_min": -61630555.97053101,
+      "prediction_max": -61630555.97053101,
+      "prediction_median": -61630555.97053101,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 20000
+    },
+    "Q0_OPERATING_EXPENSES": {
+      "prediction_min": 333909166.32938635,
+      "prediction_max": 333909166.32938635,
+      "prediction_median": 333909166.32938635,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 0
+    },
+    "Q0_EBITDA": {
+      "prediction_min": -65859044.8396386,
+      "prediction_max": -65859044.8396386,
+      "prediction_median": -65859044.8396386,
+      "outside_training_range_count": 0,
+      "above_10x_training_abs_p99_count": 0,
+      "negative_prediction_count": 20000
+    }
+  }
+}
