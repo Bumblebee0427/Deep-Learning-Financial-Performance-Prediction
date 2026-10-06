@@ -1,0 +1,98 @@
+{
+  "evaluation_framework.py": {
+    "sha256": "21a711804f2eb6ee1b56d7bf03ccad59cc93cb9de4b03d81d826a72ecf41a0cc",
+    "lines": 272,
+    "appendix_pages": [
+      1,
+      6
+    ]
+  },
+  "benchmark_models.py": {
+    "sha256": "35017cffd33059d9e5390980daac9a622e87dac3a2259b16a84b7776ac638fff",
+    "lines": 351,
+    "appendix_pages": [
+      7,
+      14
+    ]
+  },
+  "oof_models.py": {
+    "sha256": "da7ed56c93777aefa50c415a239d0c914a5d3defea1504102e54b3feb8baed42",
+    "lines": 197,
+    "appendix_pages": [
+      15,
+      18
+    ]
+  },
+  "hard_target_oof.py": {
+    "sha256": "43c7b4f56c2c09ff220967a687fc2f188add26aa583e6403589771de13343aec",
+    "lines": 187,
+    "appendix_pages": [
+      19,
+      22
+    ]
+  },
+  "analyze_oof.py": {
+    "sha256": "9700e3c24b89e9fa04ca228fe545e9a4be841689dbf5c3f587b8ad7f561a2a76",
+    "lines": 369,
+    "appendix_pages": [
+      23,
+      30
+    ]
+  },
+  "locked_recipe_cv.py": {
+    "sha256": "51c140ddab44198165700e837284d066e3d48852350b730f516c27109d5e8829",
+    "lines": 282,
+    "appendix_pages": [
+      31,
+      36
+    ]
+  },
+  "arcsinh_ablation_cv.py": {
+    "sha256": "8f3900d975b03b19e19a1cac39676f3ed07402870e8b9ffa755d2e07ae92056a",
+    "lines": 98,
+    "appendix_pages": [
+      37,
+      38
+    ]
+  },
+  "hard_representations_cv.py": {
+    "sha256": "6dd64bdf9e359282150f3ab8f77dd925b811799a737788f8265b26500f8e4e27",
+    "lines": 138,
+    "appendix_pages": [
+      39,
+      41
+    ]
+  },
+  "lightgbm_small_search.py": {
+    "sha256": "8727bd6ad7a9ab92586d85266c1fa3024df15183d23f3c601bb62ce3d0b63cfa",
+    "lines": 139,
+    "appendix_pages": [
+      42,
+      44
+    ]
+  },
+  "candidate_recipe_cv.py": {
+    "sha256": "1609db8a69ced20eb0bbed135b12fe06ec4e798e07ac0645da75378d59eb35f7",
+    "lines": 241,
+    "appendix_pages": [
+      45,
+      49
+    ]
+  },
+  "submission_code.py": {
+    "sha256": "f6316480434c8691056e3ab5298efc5cc24ddcef3e65f28f78e8374481f7bfc5",
+    "lines": 279,
+    "appendix_pages": [
+      50,
+      55
+    ]
+  },
+  "individual_report_outputs/report_uncertainty.py": {
+    "sha256": "fa5657dd00b60cbb301aa2ab972698cfc88704c894f12c29ce8da8d4a4cf4cbe",
+    "lines": 74,
+    "appendix_pages": [
+      56,
+      57
+    ]
+  }
+}

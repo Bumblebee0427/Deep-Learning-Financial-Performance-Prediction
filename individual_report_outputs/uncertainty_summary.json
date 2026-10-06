@@ -1,0 +1,52 @@
+{
+  "seed": 20261006,
+  "bootstrap_resamples": 2000,
+  "validation_rows": 20000,
+  "models": {
+    "mean": {
+      "mean_smape_percent": 136.15185125696277,
+      "conditional_bootstrap_95_interval_percent": [
+        135.56432680808095,
+        136.7514816596313
+      ]
+    },
+    "lightgbm": {
+      "mean_smape_percent": 29.332996311785507,
+      "conditional_bootstrap_95_interval_percent": [
+        28.97516179713501,
+        29.66708417322312
+      ]
+    },
+    "neural_network": {
+      "mean_smape_percent": 34.49840654647932,
+      "conditional_bootstrap_95_interval_percent": [
+        34.12327788744754,
+        34.85778362603104
+      ]
+    }
+  },
+  "neural_minus_lightgbm": {
+    "difference_percentage_points": 5.165410234693815,
+    "paired_bootstrap_95_interval_percentage_points": [
+      4.963095744711349,
+      5.369306688338339
+    ]
+  },
+  "locked_seed314159_fold_summary": {
+    "mean_smape_percent": 21.20642968133207,
+    "sample_sd_percentage_points": 0.03089222169040419,
+    "range_percent": [
+      21.164038810290965,
+      21.2484281484099
+    ]
+  },
+  "candidate_seed314159_fold_summary": {
+    "mean_smape_percent": 16.571940932645603,
+    "sample_sd_percentage_points": 0.07977132006239572,
+    "range_percent": [
+      16.482771830883664,
+      16.676765837173697
+    ]
+  },
+  "limitations": "Bootstrap intervals condition on fixed fitted models and exchangeable validation rows; they do not include model selection/training variability. Different CV seeds reuse the same rows and are not independent holdout samples."
+}

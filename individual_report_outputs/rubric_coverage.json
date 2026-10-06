@@ -1,0 +1,26 @@
+{
+  "author": "Yankun Zhu",
+  "language": "English",
+  "Data Prep (15 points)": {
+    "required_subsection": "main page 1",
+    "preprocessing_and_rationale": "main pages 1-2"
+  },
+  "Method Selection (85 points)": {
+    "required_subsection": "main page 2",
+    "non_deep_learning_description_and_rationale": "main page 3",
+    "deep_learning_architecture_training_and_justification": "main page 3",
+    "common_comparison_against_naive_mean": "main pages 2 and 4",
+    "validation_and_hyperparameter_selection": "main pages 2, 3, 5 and 6",
+    "results_and_best_method": "main pages 4 and 7",
+    "uncertainty_and_limits": "main pages 4 and 7"
+  },
+  "report_format": {
+    "source_code_in_main_report": false,
+    "separate_complete_code_appendix": true,
+    "combined_pdf_available": true
+  },
+  "model_changes_during_report_preparation": false,
+  "new_model_training_during_report_preparation": false,
+  "historical_neural_network_score_percent": 34.49840654647932,
+  "fixed_candidate_cv_score_percent": 16.571940932645603
+}
